@@ -43,7 +43,7 @@ ActionController::Routing::Routes.draw do |map|
   map.help    '/help',    :controller => 'pages', :action => 'help'
   map.root :controller => 'pages', :action => 'home'
   map.signup '/signup',   :controller => 'users', :action => 'new'
-
+  map.resources :users
 
 
   map.connect ':controller/:action/:id'
